@@ -22,23 +22,17 @@
     </div>
 
     {{!-- Email subscribe form at the bottom of the page --}}
-    {{#if @labs.subscribers}}
-    <section class="subscribe-form">
-        <h3 class="subscribe-form-title">Subscribe to {{@site.title}}</h3>
-        <p>Get the latest posts delivered right to your inbox</p>
-        {{subscribe_form placeholder="youremail@example.com"}}
-    </section>
-    {{/if}}
 
     <footer class="post-content-footer">
 
-        {{!-- There are two options for how we display the byline/author-info.
-        If the post has more than one author, we load a specific template
-        from includes/byline-multiple.hbs, otherwise, we just use the
-        default byline. --}}
+       <time datetime="{{date published_at format="YYYY-MM-DD"}}">{{date published_at format="MMMM DD, YYYY"}}</time>
+       <br/>
+       <span>{{tags separator=" &bull; " prefix="Read other posts tagged"}}</span>
 
 
     </footer>
+    <hr/>
+    <h3 class="newsletter"><a href="https://tinyletter.com/boghison">Subscribe to my newsletter 💌</a></h3>
 
     {{!--
     <section class="post-content-comments">

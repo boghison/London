@@ -516,6 +516,7 @@ body {
     max-width: 720px;
     margin: 0 auto;
     padding: 6vw 0;
+    text-align: justify;
 }
 
 .post-content-header {
@@ -715,6 +716,14 @@ body {
 .author-links .divider {
     display: inline-block;
     margin: 0 3px;
+}
+
+.post-content-footer {
+    text-alignt: right;
+}
+
+.newsletter {
+    color: #c483c4;
 }
 
 /* Page Template
